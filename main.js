@@ -23,7 +23,6 @@ client.on("message", message => {
   if (message.content.indexOf(prefix) !== 0) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  console.log("F")
   if (command === "ban-blacklist") {
     blacklist.forEach(id => {
       console.log(id);
